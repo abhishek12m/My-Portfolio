@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --red:#ff3838;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+}
+*::selection{
+    background:var(--red);
+color:rgb(15, 15, 15);
+}
+html{
+    font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+body{
+    background: white;
+}
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:black;
+    padding:2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 3.3rem;
+    font-weight: bolder;
+    color:rgb(32, 218, 32);
+}
+header a:hover{
+    color:#666;
+}
+header .navbar a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin-left: 2rem;
+    color:rgb(32, 218, 32);
+}
+header .navbar a:hover{
+    color:#666;
+}
+#menu-bar{
+    font-size: 3rem;
+    cursor: pointer;
+    color:#666;
+    border:.3rem solid #666;
+    border-radius: .3rem;
+    padding:.5rem 1.5rem;
+    display: none;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 97vh;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    flex:1 1 40rem;
+  padding-top: 6.5rem;
+}
+.home .image{
+    flex:40rem;
+}
+.home .image img{
+    width:100%;
+    padding:1rem;
+    /* animation:float 3s linear infinite; */
+}
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+.home .content h3{
+    margin-left: 30px;
+    font-size: 5rem;
+    color:#333;
+}
+.home .content h6{
+    margin-left: 200px;
+    font-size: 3rem;
+    color:#333;
+}
+
+.home .content p a{
+    margin-left: 220px;
+    font-size: 2rem;
+    color:#333;
+}
+.home .content a{
+    margin-left: 10px;
+    font-size: 2rem;
+    color:#333;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 80vh;
+    align-items: center;
+    background-size: cover;
+    background: black;
+    background-position: center;
+    
+}
+.about .content{
+    margin-top: -100px;
+    flex:1 1 40rem;
+  padding-top: 6.5rem;
+  
+}
+.about .content .heading{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    font-size: 4.5rem;
+    position: relative;
+    padding:1rem;
+    color:#666;
+}
+.about .content .heading ,.home .image img{
+    /* for chrome and safari*/
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: slidein;
+
+    /*for firefox*/
+    -moz-animation-duration: 1s;
+    -moz-animation-name: slidein;
+
+      /* for opera*/
+    -o-animation-duration: 1s;
+    -o-animation-name: slidein;
+
+      /* Standard syntax*/
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@-moz-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+ @-o-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+  @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.heading span{
+    color:rgb(32, 218, 32);
+}
+.about .content h4{
+    color: white;
+    margin-left: 200px;
+    font-size: 3rem;
+    color:#333;
+}
