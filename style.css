@@ -102,6 +102,12 @@ header .navbar a:hover{
 }
 
 .home .content p a{
+    margin-left: 2px;
+    font-size: 2rem;
+    color:#333;
+    transition: 2s;
+}
+.home .content p i{
     margin-left: 220px;
     font-size: 2rem;
     color:#333;
