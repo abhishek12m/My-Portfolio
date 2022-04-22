@@ -1,149 +1,226 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-:root{
-    --red:#ff3838;
+
+:root {
+    --red: #ff3838;
 }
-*{
+
+* {
     font-family: 'Nunito', sans-serif;
-    margin:0; padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline: none; border:none;
+    outline: none;
+    border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition:all .2s linear;
+    transition: all .2s linear;
 }
-*::selection{
-    background:var(--red);
-color:rgb(15, 15, 15);
+
+*::selection {
+    background: var(--red);
+    color: rgb(15, 15, 15);
 }
-html{
+
+html {
     font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
 }
-body{
+
+body {
     background: white;
 }
-header{
+
+header {
     position: fixed;
-    top:0; left: 0; right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:black;
-    padding:2rem 9%;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background: black;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(49, 241, 6, 0.1);
 }
-header .logo{
+
+header .logo {
     font-size: 3.3rem;
     font-weight: bolder;
-    color:rgb(32, 218, 32);
+    color: rgb(32, 218, 32);
 }
-header a:hover{
-    color:#666;
+
+header a:hover {
+    color: #666;
 }
-header .navbar a{
+
+header .navbar a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     margin-left: 2rem;
-    color:rgb(32, 218, 32);
+    color: rgb(32, 218, 32);
 }
-header .navbar a:hover{
-    color:#666;
+
+header .navbar a:hover {
+    color: #666;
 }
-#menu-bar{
+
+#menu-bar {
     font-size: 3rem;
     cursor: pointer;
-    color:#666;
-    border:.3rem solid #666;
+    color: #666;
+    border: .3rem solid #666;
     border-radius: .3rem;
-    padding:.5rem 1.5rem;
+    padding: .5rem 1.5rem;
     display: none;
 }
-.home{
+
+.home {
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap: 1.5rem;
     min-height: 97vh;
     align-items: center;
     background-size: cover;
     background-position: center;
 }
-.home .content{
-    flex:1 1 40rem;
-  padding-top: 6.5rem;
+
+.btn {
+    display: inline-block;
+    padding: .8rem 1rem;
+    border: .2rem solid rgb(32, 218, 32);
+    color: rgb(32, 218, 32);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
 }
-.home .image{
-    flex:40rem;
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(32, 218, 32);
+    transition: .3s linear;
+    z-index: -1;
 }
-.home .image img{
-    width:100%;
-    padding:1rem;
+
+.btn:hover::before {
+    width: 100%;
+    right: 0;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.home .content .resume a {
+    margin-left: 280px;
+}
+
+.home .image {
+    flex: 40rem;
+}
+
+.home .image img {
+    width: 100%;
+    padding: 1rem;
     /* animation:float 3s linear infinite; */
 }
-@keyframes float{
-    0%, 100%{
+
+@keyframes float {
+
+    0%,
+    100% {
         transform: translateY(0rem);
     }
-    50%{
+
+    50% {
         transform: translateY(3rem);
     }
 }
-.home .content h3{
+
+.home .content h3 {
     margin-left: 30px;
     font-size: 5rem;
-    color:#333;
-}
-.home .content h6{
-    margin-left: 200px;
-    font-size: 3rem;
-    color:#333;
+    color: #333;
 }
 
-.home .content p a{
+.home .content h6 {
+    margin-left: 200px;
+    font-size: 3rem;
+    color: #333;
+}
+
+.home .content p a {
     margin-left: 2px;
     font-size: 2rem;
-    color:#333;
+    color: #333;
     transition: 2s;
 }
-.home .content p i{
+
+.home .content p i {
     margin-left: 220px;
     font-size: 2rem;
-    color:#333;
+    color: #333;
 }
-.home .content a{
+
+.home .content a {
     margin-left: 10px;
     font-size: 2rem;
-    color:#333;
+    color: #333;
 }
-.about{
+
+.about {
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
-    min-height: 80vh;
+    gap: 1.5rem;
+    min-height: 100vh;
     align-items: center;
     background-size: cover;
     background: black;
     background-position: center;
+
+}
+
+.about .content {
+    margin-top: -200px;
+    flex: 1 1 20rem;
     
+
 }
-.about .content{
-    margin-top: -100px;
-    flex:1 1 40rem;
-  padding-top: 6.5rem;
-  
-}
-.about .content .heading{
+
+.about .content .heading {
     text-align: center;
-    margin-bottom: 50px;
-    margin-left: 0px;
+    margin-bottom: 30px;
+    margin-left: -500px;
+    
     font-size: 4.5rem;
     position: relative;
-    padding:1rem;
-    color:#666;
+    padding: 1rem;
+    color: #666;
 }
-.about .content .heading ,.home .image img{
+.about .content img{
+    height: 350px;
+    border-radius: 40%;
+    margin-left: 1100px;
+    margin-top: 820px;
+    margin-bottom: -210px;
+}
+
+.about .content .heading,
+.resume .tech .heading,
+.projects .heading,
+.home .image img {
     /* for chrome and safari*/
     -webkit-animation-duration: 1s;
     -webkit-animation-name: slidein;
@@ -152,11 +229,11 @@ header .navbar a:hover{
     -moz-animation-duration: 1s;
     -moz-animation-name: slidein;
 
-      /* for opera*/
+    /* for opera*/
     -o-animation-duration: 1s;
     -o-animation-name: slidein;
 
-      /* Standard syntax*/
+    /* Standard syntax*/
     animation-duration: 1s;
     animation-name: slidein;
 }
@@ -184,7 +261,8 @@ header .navbar a:hover{
         width: 100%;
     }
 }
- @-o-keyframes slidein {
+
+@-o-keyframes slidein {
     from {
         margin-left: 100%;
         width: 300%;
@@ -195,7 +273,8 @@ header .navbar a:hover{
         width: 100%;
     }
 }
-  @keyframes slidein {
+
+@keyframes slidein {
     from {
         margin-left: 100%;
         width: 300%;
@@ -207,12 +286,71 @@ header .navbar a:hover{
     }
 }
 
-.heading span{
-    color:rgb(32, 218, 32);
+.heading span {
+    color: rgb(32, 218, 32);
 }
-.about .content h4{
+
+.about .content h4 {
     color: white;
-    margin-left: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: -1150px;
     font-size: 3rem;
-    color:#333;
+    color: #333;
+}
+.resume .tech{
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background: black;
+    background-position: center;
+}
+.resume .tech .heading{
+    text-align: center;
+    
+    margin-bottom: 30px;
+    margin-left: 60px;
+    
+    font-size: 4.5rem;
+    position: relative;
+    padding: rem;
+    color: #666;
+}
+.tech img{
+    height: 200px;
+    margin-left: 120px;
+}
+.tech .im5,
+.tech .im6,
+.tech .im9,
+.tech .im10{
+    height: 150px;
+    margin-left: 150px;
+}
+.tech .im7{
+    margin-left: 90px;
+}
+.tech .im8{
+    margin-left: 70px;
+}
+.tech .im10{
+    margin-left: 170px;
+}
+.projects .heading{
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background: black;
+    background-position: center;
+}
+.projects .heading
+{
+    text-align: center;
+    
+    margin-bottom: 30px;
+    
+    font-size: 4.5rem;
+    position: relative;
+    padding: 5rem;
+    color: #666;
 }
