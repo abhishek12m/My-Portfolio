@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: black;
+            padding: 2rem 9%;
+            /* box-shadow:  0 1px 10px rgb(32, 218, 32); */
+            box-shadow: 0 .5rem 1rem rgba(49, 241, 6, 0.1);
+            /* box-shadow: 0 .5rem 1rem rgba(58, 84, 53, 0.925); */
+        }
+
+        header .logo {
+            font-size: 3.3rem;
+            font-weight: bolder;
+            color: rgb(32, 218, 32);
+        }
+
+        header a:hover {
+            color: #666;
+        }
+
+        header .navbar a {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+            margin-left: 2rem;
+            color: rgb(32, 218, 32);
+        }
+
+        header .navbar a:hover {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="#about">about</a>
+            <a href="#skills">skills</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+
+</body>
+
+</html>

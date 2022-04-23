@@ -32,41 +32,6 @@ body {
     background: white;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: black;
-    padding: 2rem 9%;
-    box-shadow: 0 .5rem 1rem rgba(49, 241, 6, 0.1);
-}
-
-header .logo {
-    font-size: 3.3rem;
-    font-weight: bolder;
-    color: rgb(32, 218, 32);
-}
-
-header a:hover {
-    color: #666;
-}
-
-header .navbar a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
-    margin-left: 2rem;
-    color: rgb(32, 218, 32);
-}
-
-header .navbar a:hover {
-    color: #666;
-}
-
 #menu-bar {
     font-size: 3rem;
     cursor: pointer;
@@ -90,7 +55,7 @@ header .navbar a:hover {
 .btn {
     display: inline-block;
     padding: .8rem 1rem;
-    border: .2rem solid rgb(32, 218, 32);
+    border: .2rem solid black;
     color: rgb(32, 218, 32);
     cursor: pointer;
     font-size: 1.7rem;
@@ -127,11 +92,10 @@ header .navbar a:hover {
     margin-left: 280px;
 }
 
-.home .image {
+.home .image{
     flex: 40rem;
 }
-
-.home .image img {
+.home .image img{
     width: 100%;
     padding: 1rem;
     /* animation:float 3s linear infinite; */
@@ -148,78 +112,11 @@ header .navbar a:hover {
         transform: translateY(3rem);
     }
 }
-
-.home .content h3 {
-    margin-left: 30px;
-    font-size: 5rem;
-    color: #333;
-}
-
-.home .content h6 {
-    margin-left: 200px;
-    font-size: 3rem;
-    color: #333;
-}
-
-.home .content p a {
-    margin-left: 2px;
-    font-size: 2rem;
-    color: #333;
-    transition: 2s;
-}
-
-.home .content p i {
-    margin-left: 220px;
-    font-size: 2rem;
-    color: #333;
-}
-
-.home .content a {
-    margin-left: 10px;
-    font-size: 2rem;
-    color: #333;
-}
-
-.about {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    min-height: 100vh;
-    align-items: center;
-    background-size: cover;
-    background: black;
-    background-position: center;
-
-}
-
-.about .content {
-    margin-top: -200px;
-    flex: 1 1 20rem;
-    
-
-}
-
-.about .content .heading {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-left: -500px;
-    
-    font-size: 4.5rem;
-    position: relative;
-    padding: 1rem;
-    color: #666;
-}
-.about .content img{
-    height: 350px;
-    border-radius: 40%;
-    margin-left: 1100px;
-    margin-top: 820px;
-    margin-bottom: -210px;
-}
-
 .about .content .heading,
 .resume .tech .heading,
 .projects .heading,
+.contact .heading,
+.contact .image img,
 .home .image img {
     /* for chrome and safari*/
     -webkit-animation-duration: 1s;
@@ -286,6 +183,73 @@ header .navbar a:hover {
     }
 }
 
+.home .content h3 {
+    margin-left: 30px;
+    font-size: 5rem;
+    color: #333;
+}
+
+.home .content h6 {
+    margin-left: 200px;
+    font-size: 3rem;
+    color: #333;
+}
+
+.home .content p a {
+    margin-left: 2px;
+    font-size: 2rem;
+    color: #333;
+    transition: 2s;
+}
+
+.home .content p i {
+    margin-left: 220px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.home .content a {
+    margin-left: 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background: black;
+    background-position: center;
+
+}
+
+.about .content {
+    margin-top: -200px;
+    flex: 1 1 20rem;
+    
+
+}
+
+.about .content .heading {
+    text-align: center;
+    
+    margin-bottom: 30px;
+    
+    font-size: 4.5rem;
+    position: relative;
+    padding: 5rem;
+    color: #666;
+}
+.about .content img{
+    height: 350px;
+    border-radius: 40%;
+    margin-left: 1100px;
+    margin-top: 820px;
+    margin-bottom: -210px;
+}
 .heading span {
     color: rgb(32, 218, 32);
 }
@@ -313,7 +277,7 @@ header .navbar a:hover {
     
     font-size: 4.5rem;
     position: relative;
-    padding: rem;
+    padding: 5rem;
     color: #666;
 }
 .tech img{
@@ -336,7 +300,7 @@ header .navbar a:hover {
 .tech .im10{
     margin-left: 170px;
 }
-.projects .heading{
+.projects {
     min-height: 100vh;
     align-items: center;
     background-size: cover;
@@ -353,4 +317,47 @@ header .navbar a:hover {
     position: relative;
     padding: 5rem;
     color: #666;
+}
+.contact {
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background: black;
+    background-position: center;
+}
+.contact .heading{
+    text-align: center;
+    
+    margin-bottom: 30px;
+    
+    font-size: 4.5rem;
+    position: relative;
+    padding: 5rem;
+    color: #666;
+}
+.contact .contianer{
+    height: 440px;
+    width: 440px;
+    background: white;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+.contact .image img {
+    height: 460px;
+    width: 520px;
+    
+    padding: 1rem;
+    margin-left: 800px;
+    margin-top: -900px;
+    
+    /* animation:float 3s linear infinite; */
+}
+.contacts .image {
+    flex: 40rem;
+}
+.contacts .image img{
+    width: 100%;
+    padding: 1rem;
+    /* animation:float 3s linear infinite; */
 }

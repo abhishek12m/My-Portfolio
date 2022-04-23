@@ -5,23 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/anime-boy-drawing.png" type="image/x-icon">
+    <link rel="stylesheet" href="./public/src/My Projects/style.css">
+    <style>
+        #scroll-top {
+            position: fixed;
+            top: -120%;
+            right: 2rem;
+            padding: .5rem 1.5rem;
+            font-size: 4rem;
+            background: rgb(32, 218, 32);
+            color: #fff;
+            border-radius: .5rem;
+            transition: 1s linear;
+            z-index: 1000;
+        }
+
+        #scroll-top.active {
+            top: calc(100% - 12rem)
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo">Portfolio</a>
-        <div id="menu-bar" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <a href="#about">about</a>
-            <a href="#skills">skills</a>
-            <a href="#projects">projects</a>
-            <a href="#contact">contact</a>
-        </nav>
-    </header>
+    <div w3-include-html="header.html"></div>
     <section class="home" id="home">
         <div class="content">
             <h3>Hi! I'm Abhishek Maheshwari </h3>
@@ -38,34 +49,130 @@
     <section class="about" id="about">
         <div class="content" onscroll="myFunction()">
             <h2 class="heading" onscroll="myFunction()"> about <span>me</span> </h2>
-            <h4>Dedicated and efficient Web Developer with hands <br> on experience in designing web applications. <br> Proficient in collaborating with team to build, <br> maintain & update websites applications within <br> deadlines.I build things for the Android and Web <br> Platforms,Skilled in HTML , CSS, JavaScript , React <br> libraries and framework.
+            <h4>Dedicated and efficient Web Developer with hands <br> on experience in designing web applications. <br>
+                Proficient in collaborating with team to build, <br> maintain & update websites applications within <br>
+                deadlines.I build things for the Android and Web <br> Platforms,Skilled in HTML , CSS, JavaScript ,
+                React <br> libraries and framework.
             </h4>
             <img src="/images/Abhishek pic.jfif" alt="">
         </div>
     </section>
-    <section class="resume" id ="skills">
+    <section class="resume" id="skills">
         <div class="tech">
             <h2 class="heading" onscroll="myFunction()"> My <span>Skills</span> </h2>
-            <img src="./images/Java_logo.png" class ="im1"alt="">
-            <img src="./images/html-5.png" class ="im2"alt="">
-            <img src="./images/css.png" class ="im3"alt="">
-            <img src="./images/js.png" class ="im5"alt="">
-            <img src="./images/mysql.png" class ="im6"alt="">
-            <img src="./images/node.png" class ="im7"alt="">
-            <img src="./images/mongodb.png" class ="im8"alt="">
-            <img src="./images/py.png" class ="im9"alt="">
-            <img src="./images/c++.png" class ="im10"alt="">
-            <img src="./images/github.png" class ="im12"alt="">
+            <img src="./images/Java_logo.png" class="im1" alt="">
+            <img src="./images/html-5.png" class="im2" alt="">
+            <img src="./images/css.png" class="im3" alt="">
+            <img src="./images/js.png" class="im5" alt="">
+            <img src="./images/mysql.png" class="im6" alt="">
+            <img src="./images/node.png" class="im7" alt="">
+            <img src="./images/mongodb.png" class="im8" alt="">
+            <img src="./images/py.png" class="im9" alt="">
+            <img src="./images/c++.png" class="im10" alt="">
+            <img src="./images/github.png" class="im12" alt="">
         </div>
     </section>
     <section class="projects" id="projects">
         <h2 class="heading" onscroll="myFunction()"> My <span>Projects</span> </h2>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <img src="download.jfif" alt="us1">
+                </div>
+                <div class="card-bodey">
+                    <span class="tag tag-teal">popular1</span>
+                    <h4>why is the tesla cybertruck designed the way it is?</h4>
+                    <p>An exploratio into th truck;s polarising design.</p>
+                    <div class="user">
+                        <img src="download.jfif" alt="us2">
+                        <div class="user-infoo">
+                            <h5>Carie brebbb</h5>
+                            <small>2h ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="images.jfif" alt="us3">
+                </div>
+                <div class="card-bodey">
+                    <span class="tag tag-teal1">popular2</span>
+                    <h4>why is the tesla cybertruck designed the way it is?</h4>
+                    <p>An exploratio into th truck;s polarising design.</p>
+                    <div class="user">
+                        <img src="images.jfif" alt="us5">
+                        <div class="user-infoo">
+                            <h5>Carie brebbb</h5>
+                            <small>2h ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="3.jfif" alt="us65">
+                </div>
+                <div class="card-bodey">
+                    <span class="tag tag-teal2">popular3</span>
+                    <h4>why is the tesla cybertruck designed the way it is?</h4>
+                    <p>An exploratio into th truck;s polarising design.</p>
+                    <div class="user">
+                        <img src="images.jfif" alt="us6">
+                        <div class="user-infoo">
+                            <h5>Carie brebbb</h5>
+                            <small>2h ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="3.jfif" alt="us65">
+                </div>
+                <div class="card-bodey">
+                    <span class="tag tag-teal2">popular3</span>
+                    <h4>why is the tesla cybertruck designed the way it is?</h4>
+                    <p>An exploratio into th truck;s polarising design.</p>
+                    <div class="user">
+                        <img src="images.jfif" alt="us6">
+                        <div class="user-infoo">
+                            <h5>Carie brebbb</h5>
+                            <small>2h ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
-    <script>
+    <section class="contact" id="contact">
+        <h2 class="heading" onscroll="myFunction()"> My <span>contact</span> </h2>
+        <div class="contianer">
+
+            <form action="#" method="post">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint et nemo eius qui, provident amet
+                    aliquam harum in vero sunt dolorem, omnis labore autem blanditiis dolore laudantium ullam molestiae
+                    quia!</p>
+            </form>
+        </div>
+        <div class="image">
+            <img src="./images/1.jfif" alt="">
+        </div>
+
+
+    </section>
+    <!-- <script>
         function myFunction() {
             location.reload();
         }
+    </script> -->
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+    <script src="./script.js"></script>
+    <div w3-include-html="footer.html"></div>
+    <script>
+        includeHTML();
     </script>
 </body>
 
