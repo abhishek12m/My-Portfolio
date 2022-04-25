@@ -17,6 +17,7 @@ window.onscroll = () => {
     document.querySelector('#scroll-top').classList.add('active');
   } else {
     document.querySelector('#scroll-top').classList.remove('active');
+    
   }
 
 }

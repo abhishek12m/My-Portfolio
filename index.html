@@ -11,28 +11,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="./images/anime-boy-drawing.png" type="image/x-icon">
     <link rel="stylesheet" href="./public/src/My Projects/style.css">
-    <style>
-        #scroll-top {
-            position: fixed;
-            top: -120%;
-            right: 2rem;
-            padding: .5rem 1.5rem;
-            font-size: 4rem;
-            background: rgb(32, 218, 32);
-            color: #fff;
-            border-radius: .5rem;
-            transition: 1s linear;
-            z-index: 1000;
-        }
-
-        #scroll-top.active {
-            top: calc(100% - 12rem)
-        }
-    </style>
 </head>
 
 <body>
-    <div w3-include-html="header.html"></div>
+    <!-- <div w3-include-html="header.html"></div> -->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="#about">about</a>
+            <a href="#skills">skills</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
     <section class="home" id="home">
         <div class="content">
             <h3>Hi! I'm Abhishek Maheshwari </h3>
@@ -51,8 +43,8 @@
             <h2 class="heading" onscroll="myFunction()"> about <span>me</span> </h2>
             <h4>Dedicated and efficient Web Developer with hands <br> on experience in designing web applications. <br>
                 Proficient in collaborating with team to build, <br> maintain & update websites applications within <br>
-                deadlines.I build things for the Android and Web <br> Platforms,Skilled in HTML , CSS, JavaScript ,
-                React <br> libraries and framework.
+                deadlines.I build things for the Web Platforms, <br> Skilled in HTML, CSS, JavaScript, React <br>
+                libraries and framework.
             </h4>
             <img src="/images/Abhishek pic.jfif" alt="">
         </div>
@@ -170,7 +162,8 @@
     </script> -->
     <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
     <script src="./script.js"></script>
-    <div w3-include-html="footer.html"></div>
+    <!-- <div w3-include-html="footer.html"></div> -->
+    <div w3-include-html="contact.html"></div>
     <script>
         includeHTML();
     </script>
