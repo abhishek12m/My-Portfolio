@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root {
-    --red: #ff3838;
+    --red: rgb(32, 218, 32);
 }
 
 * {
@@ -125,6 +125,21 @@ header .navbar a:hover {
 
 .home .content .resume a {
     margin-left: 280px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background: black;
+    box-shadow: 0px 5px 10px rgb(22, 22, 22);
+    transition: 0.3s ease;
+    font-family: "Nunito", sans-serif;
+}
+
+.home .content .resume a:hover {
+    background: rgb(32, 218, 32);
+    box-shadow: 0px 5px 10px rgb(32, 218, 32);
 }
 
 .home .image{
@@ -248,55 +263,6 @@ header .navbar a:hover {
     font-size: 2rem;
     color: #333;
 }
-
-.about {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    min-height: 100vh;
-    align-items: center;
-    background-size: cover;
-    background: black;
-    background-position: center;
-
-}
-
-.about .content {
-    margin-top: -200px;
-    flex: 1 1 20rem;
-    
-
-}
-
-.about .content .heading {
-    text-align: center;
-    
-    margin-bottom: 30px;
-    
-    font-size: 4.5rem;
-    position: relative;
-    padding: 5rem;
-    color: #666;
-}
-.about .content img{
-    height: 350px;
-    border-radius: 40%;
-    margin-left: 1100px;
-    margin-top: 820px;
-    margin-bottom: -210px;
-}
-.heading span {
-    color: rgb(32, 218, 32);
-}
-
-.about .content h4 {
-    color: white;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: -1150px;
-    font-size: 3rem;
-    color: #333;
-}
 .resume .tech{
     min-height: 100vh;
     align-items: center;
@@ -352,49 +318,6 @@ header .navbar a:hover {
     position: relative;
     padding: 5rem;
     color: #666;
-}
-.contact {
-    min-height: 100vh;
-    align-items: center;
-    background-size: cover;
-    background: black;
-    background-position: center;
-}
-.contact .heading{
-    text-align: center;
-    
-    margin-bottom: 30px;
-    
-    font-size: 4.5rem;
-    position: relative;
-    padding: 5rem;
-    color: #666;
-}
-.contact .contianer{
-    height: 440px;
-    width: 440px;
-    background: white;
-    margin-left: 100px;
-    border-radius: 10px;
-}
-
-.contact .image img {
-    height: 460px;
-    width: 520px;
-    
-    padding: 1rem;
-    margin-left: 800px;
-    margin-top: -900px;
-    
-    /* animation:float 3s linear infinite; */
-}
-.contacts .image {
-    flex: 40rem;
-}
-.contacts .image img{
-    width: 100%;
-    padding: 1rem;
-    /* animation:float 3s linear infinite; */
 }
 #scroll-top{
     position: fixed;
