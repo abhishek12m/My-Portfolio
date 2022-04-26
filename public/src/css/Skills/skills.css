@@ -1,0 +1,44 @@
+.resume .tech {
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background: black;
+    background-position: center;
+}
+
+.resume .tech .heading {
+    text-align: center;
+
+    margin-bottom: 30px;
+    margin-left: 60px;
+
+    font-size: 4.5rem;
+    position: relative;
+    padding: 5rem;
+    color: #666;
+}
+
+.tech img {
+    height: 200px;
+    margin-left: 120px;
+}
+
+.tech .im5,
+.tech .im6,
+.tech .im9,
+.tech .im10 {
+    height: 150px;
+    margin-left: 150px;
+}
+
+.tech .im7 {
+    margin-left: 90px;
+}
+
+.tech .im8 {
+    margin-left: 70px;
+}
+
+.tech .im10 {
+    margin-left: 170px;
+}

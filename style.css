@@ -58,7 +58,7 @@ header a:hover {
 }
 
 header .navbar a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 2rem;
     margin-left: 2rem;
     color: rgb(32, 218, 32);
@@ -77,259 +77,20 @@ header .navbar a:hover {
     display: none;
 }
 
-.home {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    min-height: 97vh;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-}
-
-.btn {
-    display: inline-block;
-    padding: .8rem 1rem;
-    border: .2rem solid black;
-    color: rgb(32, 218, 32);
-    cursor: pointer;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-    margin-top: 1rem;
-}
-
-.btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0%;
-    height: 100%;
-    background: rgb(32, 218, 32);
-    transition: .3s linear;
-    z-index: -1;
-}
-
-.btn:hover::before {
-    width: 100%;
-    right: 0;
-}
-
-.home .content {
-    flex: 1 1 40rem;
-    padding-top: 6.5rem;
-}
-
-.home .content .resume a {
-    margin-left: 280px;
-    color: #fff;
-    border: none;
-    outline: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    border-radius: 5px;
-    background: black;
-    box-shadow: 0px 5px 10px rgb(22, 22, 22);
-    transition: 0.3s ease;
-    font-family: "Nunito", sans-serif;
-}
-
-.home .content .resume a:hover {
-    background: rgb(32, 218, 32);
-    box-shadow: 0px 5px 10px rgb(32, 218, 32);
-}
-
-.home .image{
-    flex: 40rem;
-}
-.home .image img{
-    width: 100%;
-    padding: 1rem;
-    /* animation:float 3s linear infinite; */
-}
-
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0rem);
-    }
-
-    50% {
-        transform: translateY(3rem);
-    }
-}
-.about .content .heading,
-.resume .tech .heading,
-.projects .heading,
-.contact .heading,
-.contact .image img,
-.home .image img {
-    /* for chrome and safari*/
-    -webkit-animation-duration: 1s;
-    -webkit-animation-name: slidein;
-
-    /*for firefox*/
-    -moz-animation-duration: 1s;
-    -moz-animation-name: slidein;
-
-    /* for opera*/
-    -o-animation-duration: 1s;
-    -o-animation-name: slidein;
-
-    /* Standard syntax*/
-    animation-duration: 1s;
-    animation-name: slidein;
-}
-
-@-webkit-keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
-@-moz-keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
-@-o-keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
-.home .content h3 {
-    margin-left: 30px;
-    font-size: 5rem;
-    color: #333;
-}
-
-.home .content h6 {
-    margin-left: 200px;
-    font-size: 3rem;
-    color: #333;
-}
-
-.home .content p a {
-    margin-left: 2px;
-    font-size: 2rem;
-    color: #333;
-    transition: 2s;
-}
-
-.home .content p i {
-    margin-left: 220px;
-    font-size: 2rem;
-    color: #333;
-}
-
-.home .content a {
-    margin-left: 10px;
-    font-size: 2rem;
-    color: #333;
-}
-.resume .tech{
-    min-height: 100vh;
-    align-items: center;
-    background-size: cover;
-    background: black;
-    background-position: center;
-}
-.resume .tech .heading{
-    text-align: center;
-    
-    margin-bottom: 30px;
-    margin-left: 60px;
-    
-    font-size: 4.5rem;
-    position: relative;
-    padding: 5rem;
-    color: #666;
-}
-.tech img{
-    height: 200px;
-    margin-left: 120px;
-}
-.tech .im5,
-.tech .im6,
-.tech .im9,
-.tech .im10{
-    height: 150px;
-    margin-left: 150px;
-}
-.tech .im7{
-    margin-left: 90px;
-}
-.tech .im8{
-    margin-left: 70px;
-}
-.tech .im10{
-    margin-left: 170px;
-}
-.projects {
-    min-height: 100vh;
-    align-items: center;
-    background-size: cover;
-    background: black;
-    background-position: center;
-}
-.projects .heading
-{
-    text-align: center;
-    
-    margin-bottom: 30px;
-    
-    font-size: 4.5rem;
-    position: relative;
-    padding: 5rem;
-    color: #666;
-}
 #scroll-top{
     position: fixed;
-    top:-120%;
+    /* top:-120%; */
     right:2rem;
-    padding:.5rem 1.5rem;
-    font-size: 4rem;
-    background:rgb(32, 218, 32);
+    padding:1rem .5rem;
+    font-size: 2rem;
+    background:rgb(30, 31, 30);
     color:#fff;
     border-radius: .5rem;
     transition: .5s linear;
     z-index: 1000;
+}
+#scroll-top:hover{
+    background: rgb(32, 218, 32);
 }
 
 #scroll-top.active{
