@@ -168,21 +168,29 @@
     color: #333;
 }
 
-.home .content p a {
+.home .content .emails p a {
     margin-left: 2px;
     font-size: 2rem;
     color: #333;
-    transition: 2s;
+    text-transform: lowercase;
+    cursor: pointer;
 }
 
-.home .content p i {
-    margin-left: 220px;
+.home .content .emails p i {
+    margin-left: 160px;
     font-size: 2rem;
     color: #333;
+    cursor: pointer;
 }
-
-.home .content a {
-    margin-left: 10px;
+.home .content .phone i {
+    margin-left: 265px;
+    font-size: 1.8rem;
+    color: #333;
+    cursor: pointer;
+}
+.home .content .phone a {
+    margin-left: 1px;
     font-size: 2rem;
     color: #333;
+    cursor: pointer;
 }
