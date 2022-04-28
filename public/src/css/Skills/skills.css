@@ -29,6 +29,12 @@
 .tech .im10 {
     height: 150px;
     margin-left: 150px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.tech .im5:hover{
+    background: yellow;
+            box-shadow: 0px 5px 10px yellow;
 }
 
 .tech .im7 {
