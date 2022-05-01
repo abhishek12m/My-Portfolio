@@ -70,7 +70,11 @@
 .home .image img {
     width: 100%;
     padding: 1rem;
+    position: relative;
     /* animation:float 3s linear infinite; */
+}
+img {
+    -webkit-user-drag: none;
 }
 
 @keyframes float {

@@ -17,7 +17,7 @@
 }
 
 *::selection {
-    background: var(--red);
+    background: rgb(32, 218, 32);
     color: rgb(15, 15, 15);
 }
 
