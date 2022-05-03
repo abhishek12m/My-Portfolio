@@ -1,19 +1,130 @@
-.footer {
-    background: black;
-    text-align: center;
-    margin-left: -1px;
-    border: 1px solid black;
-    /* box-shadow:  0 1px 20px rgb(32, 218, 32);
-     */
-     box-shadow: 0 .5rem 1rem rgba(55, 225, 17, 0.925);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --orange:rgb(32, 218, 32);
+    --black:#130f40;
+    --light-color:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:0.1rem solid rgba(0,0,0,.1);
+    --outline-hover:2rem solid var(--black);
 }
 
-.footer .credit {
-    padding: 1.5rem;
-    font-weight: normal;
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+
+}
+.footer{
+    background: #fff;
+
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap: 1.5rem;
+    margin: 2rem 15rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+.footer .box-container .box h3 i{
+    color: var(--orange);
+}
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+
+}
+.footer .box-container .box .links i{
+    color: var(--orange);
+    padding: .5rem;
+}
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
     font-size: 2rem;
+    color: var(--black);
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+.footer .box-container .box .share a:hover{
+    background: var(--orange);
+    color: #fff;
 }
 
-.footer .credit {
-    color: rgb(32, 218, 32);
+
+.footer .box-container .box .email{
+    width: 72%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-decoration: none;
+}
+.footer .box-container .box .payment-img{
+    margin-top: 2rem;
+    height: 5rem;
+    margin: .1rem;
+    cursor: pointer;
+}
+.main{
+    min-height: 280px;
+}
+.footer .credit{
+    text-align: center;
+    margin-top:2rem ;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--black);
+    border-top: var(--border);
+}
+.footer .credit span{
+    color:var(--orange);
+}
+.btn:hover{
+    background: var(--orange);
+    color: #eee;
 }

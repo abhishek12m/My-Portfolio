@@ -23,7 +23,7 @@
     width: 100%;
     background: #fff;
     border-radius: 1.5rem;
-    box-shadow: 0 5px 10px wheat;
+    box-shadow: 0 5px 10px #eee;
 }
 
 .contact .container .content {
@@ -146,7 +146,7 @@ form .button-area {
 }
 
 .button-area button {
-    color: #fff;
+    color: #eee;
     border: none;
     outline: none;
     font-size: 1.8rem;
