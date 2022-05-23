@@ -1,3 +1,7 @@
+:root{
+    --orange:rgb(32, 218, 32);
+    --black:#130f40;
+}
 .home {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +14,7 @@
 
 .btn {
     display: inline-block;
-    padding: .8rem 1rem;
+    padding: 1.9rem 1rem;
     border: .2rem solid black;
     color: rgb(32, 218, 32);
     cursor: pointer;
@@ -57,7 +61,21 @@
     transition: 0.3s ease;
     font-family: "Nunito", sans-serif;
 }
-
+.home .content .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+.home .content .share a:hover{
+    background: var(--orange);
+    color: #fff;
+}
 .home .content .resume a:hover {
     background: rgb(32, 218, 32);
     box-shadow: 0px 5px 10px rgb(32, 218, 32);
@@ -166,10 +184,20 @@ img {
     color: #333;
 }
 
-.home .content h6 {
-    margin-left: 200px;
+.home .content {
+    margin-left: 150px;
     font-size: 3rem;
     color: #333;
+}
+.home .content .name .mynames {
+    margin-left:0px ;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    clear: both;
+}
+.home .content .name h6{
+    margin-left: 245px;
 }
 
 .home .content .emails p a {

@@ -81,11 +81,11 @@ header .navbar a:hover {
     position: fixed;
     /* top:-120%; */
     right:2rem;
-    padding:1rem .5rem;
+    padding:.8rem 1rem;
     font-size: 2rem;
     background:rgb(30, 31, 30);
     color:#fff;
-    border-radius: .5rem;
+    border-radius: 50%;
     transition: .5s linear;
     z-index: 1000;
 }
